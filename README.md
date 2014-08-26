@@ -1,43 +1,41 @@
-_s
-===
+#Introduction
+Spoonbill is a responsive and content-focused theme. The basic layout of this theme is to put content in the middle and as little distraction as possible. On the index and search page, more information is provided by the sidebar while on the single posts and single pages, sidebar function is provided in the footer for users after they read through the content. Let’s take a look at some basic features of this on-going theme from top to bottom.
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+#Features
+##Customizable Navigation
+Primary menu and optional social menu are provided for user. Social menu will display social media icons powered by Font Awesome by detecting the URLs users provide.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+##Fixed Nav when Scrolling Down
+Navigation bar will be fixed at the top of screen when scrolling down. Because the content-focused style eliminates sidebar on the single page and post, a fixed narrow navigation on top of page will help to provide clear and better navigation.
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in `functions.php` and adding the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/extras.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+##Customizable Site Branding
+Users can customize site title and description with different background color and text color. Optional branding  image of 1060px x 300px can be displayed below site title and description.
 
-Getting Started
----------------
+##Large Marquee on Index Page
+On index page, a 1060px x 530px large marquee is provided for highlighting purpose.  Marquee size and description is responsive to screen size. Image links are provided if there is a link in the description.
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+##Featured Image
+On single posts and pages, featured images are centered under site branding with a maximum size of 1060px x 424px. On index and search pages, featured images are placed above post indexes with size of 730px x 292px. The image width-height-ratio is 2.5 for easy calculation.
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
+##Highlighting First Post
+The first post on the index page, whether it’s a sticky post or most recent post, will display full text while other indexed posts will show a maximum of 100 words before users choose to continue reading.
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in style.css.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
+##Post Formats / Page Formats
+Standard and Aside post formats are supported. Asides are displayed without headings or meta content in index pages. All other displays are identical with Standard posts. Two page formats are supported. Page with no sidebar will place content in the middle with maximum width of 800px for easy reading, while gallery page will use full width of site content to display more information from photo.
 
-OR
+##Paging and Comments Navigation
+On index pages paged navigation is displayed on the bottom posts. On single posts navigation links with the titles of the previous and next posts are displayed. If users choose to page comments at a certain amount, similar comment navigation is provided at the bottom of the comments section.
 
-* Search for: `'_s'` and replace with: `'megatherium'`
-* Search for: `_s_` and replace with: `megatherium_`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `megatherium-`
+##Editor Styles
+The editor style is developed to ensure the appearance of content in the post and page editors are as close to the live content on the websites as possible.
 
-Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+##External Assets
+The theme features three custom fonts:
+> * [Open Sans][1] (for main content and sidebar)
+> * [PT Serif][2] (for headers)
+> * [Font Awesome][3] (for icons)
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+[Lightbox by Lokesh Dhakar][4] is utilized in this theme for better presentation of gallery items.
 
-Good luck!
+##Download and Future Development
+If you would like to use my theme, or want to develop upon my theme, please fork it on my GitHub. More feature requests are welcome and I’ll do my best to implement them.
