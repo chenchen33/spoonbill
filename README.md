@@ -31,11 +31,11 @@ The editor style is developed to ensure the appearance of content in the post an
 
 ##External Assets
 The theme features three custom fonts:
-> * [Open Sans][1] (for main content and sidebar)
-> * [PT Serif][2] (for headers)
-> * [Font Awesome][3] (for icons)
+> * [Open Sans](http://www.google.com/fonts/specimen/Open+Sans) (for main content and sidebar)
+> * [PT Serif](http://www.google.com/fonts/specimen/PT+Serif) (for headers)
+> * [Font Awesome](http://fontawesome.io/) (for icons)
 
-[Lightbox by Lokesh Dhakar][4] is utilized in this theme for better presentation of gallery items.
+[Lightbox by Lokesh Dhakar](http://lokeshdhakar.com/projects/lightbox2/) is utilized in this theme for better presentation of gallery items.
 
 ##Download and Future Development
 If you would like to use my theme, or want to develop upon my theme, please fork it on my GitHub. More feature requests are welcome and I’ll do my best to implement them.
