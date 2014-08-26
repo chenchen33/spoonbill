@@ -1,0 +1,256 @@
+/*
+Theme Name: spoonbill
+Layout: Content-Sidebar
+*/
+
+.site-content{
+    max-width: 1060px;
+    margin:1.5em auto 0;
+    padding-bottom: 25px;
+}
+
+/*single post and single post*/
+/*.single .content-area,
+.page .content-area { 
+    background: #fff; 
+    box-shadow: 0 0 1em #999990;
+    -moz-box-shadow: 0 0 1em #999990;
+    -webkit-box-shadow: 0 0 1em #999990;
+} */
+
+.site-content .content-area {
+    background: #fff;
+}
+
+.site-content .widget-area {
+    width: 100%;
+    max-width: 730px;
+    float: none;
+    margin:1em auto 0;
+    padding:2em 3em;
+    border:1px solid #000;
+    background: #fff;
+}
+.widget-title{
+    text-align: center;
+}
+
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+
+.main-navigation,
+#supplementary,
+.search-box-center{
+    max-width: 1060px;
+    margin:0 auto;
+}
+
+
+/*elements in the content*/
+.entry-header,
+.entry-content,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation,
+.page-header{
+    position: relative;
+    max-width: 800px;
+    max-width: 80rem;
+    /*padding: 0 5rem; in order to line up with image*/
+    margin: 0 auto;
+}
+
+/*index-box*/
+.index-box {
+    max-width: 800px;
+    max-width: 80rem;
+    padding: 0 0 3em;
+    margin: 0 auto 1.5em;
+    background: #fff;
+    border-bottom: 1px solid #999990;
+}
+
+.index-box blockquote.alignleft,
+.index-box blockquote.alignright {
+    background: #fff;
+    border: none;
+}
+
+/* normal display, two big columns, margin auto in the middle */
+@media screen and (min-width: 1130px) {
+	.content-area {
+	    float: left;
+        width:730px;
+        width:73rem;
+	}
+
+    .site-content .widget-area {
+        float: right;
+        width:300px;
+        width:30rem;
+        padding: 0 0 2rem 2rem;  
+        border:none;
+        margin:0 auto;
+    }
+
+    .widget-title{
+        text-align: left;
+    }
+
+    .site-branding{
+        width:1060px;
+        width:106rem;
+    }
+}
+
+/* two small columns from 960px to 1060px, margin 35px from left and right */
+@media screen and (min-width: 960px) and (max-width: 1129px){
+    .main-navigation,
+    #supplementary,
+    .search-box-center,
+    .site-branding,
+    .site-content{
+        max-width: 1060px;
+        max-width:106rem;
+    }
+
+
+    .content-area {
+        float: left;
+        width:69%;
+        max-width:730px;
+        max-width:73rem;
+    }
+
+    .site-content .widget-area {
+        float: right;
+        width:29%;
+        max-width:300px;
+        max-width:30rem;
+        padding: 2rem; 
+        border:none;
+        margin:0 auto;
+    }
+
+    .widget-title{
+        text-align: left;
+    }
+
+    /*left and right need 35px margin when screen is adjusted near threshold*/
+    .search-box-wrapper,
+    .main-navigation{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .site-content,
+    .site-branding-wrapper{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+
+
+/*one big column from 860px to 960px
+* smaller than 600px simply change menu button
+*/
+@media screen and (max-width: 959px){
+
+    .main-navigation,
+    #supplementary,
+    .search-box-center{
+        max-width: 800px;
+        margin:0 auto;
+    }
+
+
+
+    .site-branding,
+    .site-content .widget-area,
+    .site-content{
+        max-width: 800px;
+    }
+
+}
+
+.page-header,
+.paging-navigation {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+    list-style-type: none;
+    background: #fff;
+}           
+     
+/***********other
+******************
+
+
+.content-area{
+    border: 1px solid red;
+}
+
+.content-area article{
+    border:1px solid blue;
+}
+
+.widget-area{
+    border: 1px solid red;
+}
+
+.widget-area aside{
+    border: 1px solid green;
+}
+
+
+.search-box-wrapper,
+.site-branding,
+.site-content .widget-area,
+.main-navigation-wrapper,
+.index-box,
+.site-footer,
+.page-header,
+.paging-navigation{
+    box-shadow: 0 0 1em #999990;
+    -moz-box-shadow: 0 0 1em #999990;
+    -webkit-box-shadow: 0 0 1em #999990;
+}
+*/
+
+/*smaller than 800px, margin 35px from left and right*/
+@media screen and (max-width: 869px){
+    .search-box-wrapper{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .site-content,
+    .site-branding-wrapper{
+        margin-left:35px;
+        margin-right:35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .site-content .widget-area{
+        padding:2em 0;
+        border:none;
+    }
+
+    .site-footer,
+    .search-box-wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .site-content,
+    .site-branding-wrapper{
+        margin-left:10px;
+        margin-right:10px;
+    }
+}

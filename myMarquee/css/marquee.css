@@ -1,0 +1,226 @@
+/*  CSS Document                                               */
+/*  Main CSS for the layout and style of the Homepage Marquee  */
+
+.marquee {
+    background-color: #FFF;
+    padding-bottom: 1.5em;
+    margin-bottom:1.5em;
+    border-bottom: 4px solid black;
+}
+
+.marquee * {
+    font-family: 'Berkshire Swash', 'Open Sans';
+}
+
+.marquee .marquee_data {
+    display: none;
+}
+
+.marquee .marquee_stage_large {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*marquee container*/
+.marquee .marquee_container_1, 
+.marquee .marquee_container_2 {
+    height: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.marquee .marquee_container_1 {
+    z-index: 101;
+}
+
+.marquee .marquee_container_2 {
+    z-index: 102;
+}
+
+.marquee .marquee_panel {
+    height: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 45% 0px;
+}
+
+.marquee .marquee_panel .panel_caption {
+    width: 70%;
+    left: 15%;
+    top:30%;
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+}
+
+.marquee .marquee_panel .panel_caption * {
+    color: #FFF;
+    line-height: 20px;
+}
+
+.marquee .marquee_panel .panel_caption h3 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.0;
+}
+
+.marquee .marquee_panel .panel_caption p {
+    margin: 1em 0;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.marquee .marquee_panel .panel_caption p a, 
+.marquee .marquee_panel .panel_caption p a:visited {
+    border:3px solid #FFF;
+    padding:0 10px;
+}
+
+.marquee .marquee_panel .panel_caption a:hover {
+    text-decoration: none;
+}
+
+/*marguee nav*/
+.marquee .marquee_nav {
+    z-index: 103;
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    text-align: center;
+    padding: 0px 0px 0px 25px;
+    width:50%;
+}
+
+.marquee .marquee_nav div {
+    transition: background-color 1s linear;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.marquee .marquee_nav div:hover {
+    background-color: rgba(255,255,255,.8);
+    transition: background-color .1s linear;
+}
+
+.marquee .marquee_nav div.selected {
+    background-color: rgba(255,255,255,.1);
+    border:3px solid #FFF;
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    transform:scale(1.2);
+    -webkit-backface-visibility:hidden;
+}
+
+
+/*  small screen */
+/*.marquee .marquee_stage_small {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee .marquee_stage_small .marquee_panel {
+    height: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.marquee .marquee_stage_small .marquee_panel .panel_content {
+    display: none;
+}*/
+
+@media screen and (max-width: 959px){
+    .marquee .marquee_panel .panel_caption {
+        width: 80%;
+        left: 10%;
+        top:25%;
+    }
+
+    .marquee .marquee_panel .panel_caption h3 {
+        font-size: 2.5em;
+    }
+
+    .marquee .marquee_panel .panel_caption p {
+        margin: 1em 0;
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media screen and (max-width: 770px){
+
+    .marquee .marquee_panel .panel_caption {
+        width: 80%;
+        left: 10;
+        top:20%;
+    }
+
+    .marquee .marquee_panel .panel_caption h3 {
+        font-size: 2em;
+        line-height: 1.3;
+        padding:0.5em 0;
+    }
+
+    .marquee .marquee_panel .panel_caption h3 a{
+        border:none;
+        border-bottom: 2px solid #FFF;
+    }
+
+    .marquee .marquee_panel .panel_caption p {
+        display: none;
+    }
+
+    .marquee .marquee_nav div {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .marquee .marquee_panel .panel_caption {
+        width: 100%;
+        left: 0;
+        top:20%;
+    }
+
+    .marquee .marquee_panel .panel_caption h3 {
+        font-size: 1.5em;
+        line-height: 1.3;
+        padding:0.5em 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .marquee .marquee_panel .panel_caption h3 {
+        font-size: 1em;
+        line-height: 1.3;
+        padding:0.5em 0;
+    }
+
+    .marquee .marquee_nav{
+        bottom:5px;
+    }
+}

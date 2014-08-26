@@ -1,0 +1,176 @@
+
+/*
+Theme Name: spoonbill
+Layout: No sidebar
+*/
+
+
+
+.site-content{
+    max-width: 1060px;
+    margin:1.5em auto 0;
+    padding-bottom: 25px;
+}
+
+.site-content .content-area{
+    background: #fff;
+}
+
+
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+
+.main-navigation,
+#supplementary,
+.search-box-center{
+    max-width: 1060px;
+    margin:0 auto;
+}
+
+
+/*elements in the content*/
+.entry-header,
+.entry-content,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation,
+.page-header{
+    position: relative;
+    max-width: 800px;
+    max-width: 80rem;
+    /*padding: 0 5rem; in order to line up with image*/
+    margin: 0 auto;
+}
+
+/*index-box*/
+.index-box {
+    max-width: 1060px;
+    max-width: 106rem;
+    padding: 0 0 3em;
+    margin: 0 auto 1.5em;
+    background: #55AA6D;
+    border-bottom: 1px solid #999990;
+}
+
+.index-box blockquote.alignleft,
+.index-box blockquote.alignright {
+    background: #fff;
+    border: none;
+}
+
+/* normal display, two big columns */
+@media screen and (min-width: 1130px) {
+    .content-area {
+        float: none;
+        margin:0 auto;
+        max-width:1060px;
+        max-width:106rem;
+    }
+}
+
+/* two small columns from 960px to 1060px */
+@media screen and (min-width: 960px) and (max-width: 1129px){
+    .main-navigation,
+    #supplementary,
+    .search-box-center,
+    .site-content{
+        max-width: 1060px;
+        max-width:116rem;
+    }
+
+
+    .site-branding,
+    .site-content,
+    {
+        max-width: 1060px;
+        max-width:116rem;
+    }
+
+    .content-area {
+        margin:0 auto;
+        width:100%;
+        max-width:1060px;
+        max-width:1060rem;
+    }
+
+    /*left and right need 20px margin when screen is adjusted*/
+    .search-box-wrapper,
+    .main-navigation{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .site-content,
+    .site-branding-wrapper{
+        margin-left:35px;
+        margin-right:35px;
+    }
+}
+
+
+
+/*one big column from 600px to 960px
+* smaller than 600px simply change menu button
+*/
+@media screen and (max-width: 959px){
+
+    .main-navigation,
+    #supplementary,
+    .search-box-center,
+    .site-content .content-area{
+        max-width: 800px;
+        margin:0 auto;
+    }
+
+    .site-branding{
+        max-width: 800px;
+    }
+
+    .index-box{
+        padding: 1em 0 1.5em;
+    }
+
+}
+
+.page-header,
+.paging-navigation {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+    list-style-type: none;
+    background: #fff;
+}           
+     
+
+/*left and right need 20px margin when screen is adjusted*/
+@media screen and (max-width: 869px){
+    .search-box-wrapper{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .site-content,
+    .site-branding-wrapper{
+        margin-left:35px;
+        margin-right:35px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .site-footer,
+    .search-box-wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .site-content,
+    .site-branding-wrapper{
+        margin-left:10px;
+        margin-right:10px;
+    }
+}

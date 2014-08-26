@@ -1,0 +1,18 @@
+/* CSS Document */
+
+/*.gallery .gallery-icon a img{
+	width: 90px !important;
+	height: 90px !important;
+}
+
+.gallery .wp-caption-text{
+	display: none !important;
+}*/
+
+.gallery > br{
+	display: none;
+}
+
+.gallery .gallery-item{
+	width:auto !important;
+}
